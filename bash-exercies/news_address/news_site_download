@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#takes input from another file using source ./filename
+source ./www_ADDRESS
+
+#It will show here that it is busy doing it
+echo "Downloading $WWW_ADDRESS to $FILE_NAME"
+
+#Actual command
+wget --quiet --output-document=$FILE_NAME http://feeds.bbci.co.uk/news/world/rss.xml
+
+echo "Done!"
+
+exit 0
