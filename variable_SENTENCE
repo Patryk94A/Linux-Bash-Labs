@@ -1,0 +1,7 @@
+#!/bin/bash
+
+SENTENCE="If cats could talk, they woudn't"
+
+echo $SENTENCE
+
+exit 0  
