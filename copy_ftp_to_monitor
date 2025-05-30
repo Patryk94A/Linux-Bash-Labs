@@ -1,0 +1,14 @@
+#!/bin/bash
+
+INPUT_DIR=/tmp/ftp_data
+OUTPUT_DATA=/tmp/monitor_arch
+
+echo "Started to move data from $INPUT_DIR to $OUTPUT_DATA"
+logger "Started to move data from $INPUT_DIR to $OUTPUT_DATA"
+
+mv $INPUT_DIR/* $OUTPUT_DATA
+
+echo "Done"
+logger "Finished moving files from $INPUT_DIR to $OUTPUT_DATA"
+
+exit 0 
