@@ -8,13 +8,20 @@ New_size=$((Origin_file*compression_precent/100))
 
 echo $New_size
 
-check= $(echo ($New_size>$file_system))
-
-if $check ==1; do
+if [ "$New_size" -gt "$file_system" ]; then
   echo "It is not enough! Make some more space"
-    else
-  echo "It is enough, just do it!"
+else
+  echo "It is ok!"
 fi
 
 
+# There has to be +10Gb just to make sure..
 
+New_size_v2=$((New_size+10))
+echo $New_size_v2
+
+if [ "$New_size_v2" -gt "$file_system" ]; then
+  echo "It is not enough! Make some more space"
+else
+  echo "It is ok!"
+fi
