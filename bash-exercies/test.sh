@@ -38,13 +38,13 @@ echo $?
 echo $?
 
 [[ -z $NAME ]]
-echo $?
-if $? == 0; then
+
+if [[ -z $NAME ]]; then
   echo "Napis jest pusty"
-[[ -n $NAME ]]
-echo $?
-if $? == 0; then
+fi
+if [[ -n $NAME ]]; then
   echo "Napis jest niepsuty"
+fi
 NAME="Max"
 [[ -z $NAME ]]
 echo $?
