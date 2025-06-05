@@ -1,0 +1,8 @@
+Thu Jun  5 06:49:43 AM CEST 2025
+xdpo-Lenovo-ideapad-Y700-15ISK
+xdpo     seat0        2025-04-30 07:50 (login screen)
+xdpo     :1           2025-04-30 07:50 (:1)
+Thu Jun  5 06:58:45 AM CEST 2025
+xdpo-Lenovo-ideapad-Y700-15ISK
+xdpo     seat0        2025-04-30 07:50 (login screen)
+xdpo     :1           2025-04-30 07:50 (:1)
