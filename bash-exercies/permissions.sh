@@ -12,9 +12,11 @@ fi
 if [[ -f $FILE ]]; then
   echo "Changing permissions for FILE"
   chown $USER:$GROUP $FILE
+  exit 1
 elif [[ -d $FILE ]]; then
   echo "Changing permissions to Directory"
   chown -R $USER:$GROUP $FILE
+  exit 1
 else
   echo "$FILE is not proper file"
   exit 12
