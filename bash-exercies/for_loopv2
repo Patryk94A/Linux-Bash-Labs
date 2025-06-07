@@ -1,3 +1,12 @@
-#/!bin/bash
+#!/bin/bash
+
+folder_path=/home/xdpo/home/xdpo/Github.com/linux-bash/bash-exercies/folders.txt
+
+for i in {1..10}; do
+  echo "name_of_folder$i" >> $folder_path
+done
 
 
+#for i in $(cat $folder_path); do
+#  echo $i
+#done
