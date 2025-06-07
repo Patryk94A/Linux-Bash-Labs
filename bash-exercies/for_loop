@@ -1,7 +1,19 @@
 #!/bin/bash
 
-DIR=/var/log
+#DIR=/var/log
 
-for file in $DIR/*; do
-  echo $file
-done
+#for file in $DIR/*; do
+#  echo $file
+#done
+
+#IFS=''
+#FILE=/etc/fstab
+
+#for i in $(cat $FILE);do
+#  echo $i
+#done
+
+
+for i in {1..10}; do
+  echo "$i $(( $i * $i))"
+done 
