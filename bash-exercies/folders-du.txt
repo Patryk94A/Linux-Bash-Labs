@@ -1,0 +1,5 @@
+/etc
+/usr/lib
+/var/mail
+/tmp
+
