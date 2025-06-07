@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR=/var/log
+
+for file in $DIR/*; do
+  echo $file
+done
