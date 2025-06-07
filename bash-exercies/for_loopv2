@@ -1,15 +1,20 @@
 #!/bin/bash
 
-folder_path=/home/xdpo/home/xdpo/Github.com/linux-bash/bash-exercies/folders.txt
+folder_path=/home/xdpo/home/xdpo/Github.com/linux-bash/bash-exercies/folders-du.txt
 
 #for i in {1..10}; do
 #  echo "name_of_folder$i" >> $folder_path
 #done
 
-DIR=/tmp
+#DIR=/tmp
+
+#for i in $(cat $folder_path); do
+#  Catalog=$DIR/$i
+#  echo "Creating new directories under $Catalog"
+#  mkdir $Catalog
+#done
+
 
 for i in $(cat $folder_path); do
-  Catalog=$DIR/$i
-  echo "Creating new directories under $Catalog"
-  mkdir $Catalog
+  du -sh $i 2> /dev/null
 done
