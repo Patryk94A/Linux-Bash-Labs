@@ -1,9 +1,12 @@
 #!/bin/bash
 
-USER=HELEN
+USER='helen'
 
 while [[ -z $(who | grep $USER) ]]; do
   echo -n '.'
   sleep 1
 done
 
+echo -e "//7"
+echo "$USER is on the system"
+echo -e "//07"
