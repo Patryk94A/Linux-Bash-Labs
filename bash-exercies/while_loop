@@ -1,0 +1,12 @@
+#!/bin/bash
+
+MAXTIME=10
+TIME=1
+
+while [[ $TIME -le $MAXTIME ]]; do
+  sleep 1
+  echo -n '.'
+  TIME=$(($TIME + 1))
+done
+echo ''
+exit 0
