@@ -1,8 +1,13 @@
 #!/bin/bash
 
-weekday=(Lunedi Martedi Mercoledi Giovedi Venerdi)
 
 
-echo ${weekday[@]}
+USERS=(who | cut -d ' ' -f 1 | uniq)
 
 
+for u in $USERS; do
+  
+  count=$(ps --no-headers -u $u | wc -l)
+  echo "$u - $count"
+done
+exit 0
