@@ -2,5 +2,28 @@
 
 function is_small()
 {
-  if [[ 
+  DIR=/tmp/logs
+  SIZE_KB=$(du -s $DIR | cut -f 1)
+
+  if [[ $SIZE_KB -lt 1024 ]]; then
+    echo "$DIR size is still $SIZE_KB KB"
+    return 0
+  elif [[ $SIZE_KB -gt 1024 ]]; then
+    echo "$DIR size is larger then 1MB"
+    return 1
+  fi 
 }
+
+
+MESSAGE=$(is_small)
+IS_SMALL=$?
+
+echo $IS_SMALL
+
+if [[ $IS_SMALL -eq 0 ]]; then
+  echo "No action needed: $MESSAGE"
+else
+  echo "ACTION NEEDED: $MESSAGE"
+fi
+
+exit 0
