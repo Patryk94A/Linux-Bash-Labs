@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p "Podaj rzecz, kolor i ilosc: " ogien kolor ilosc
+echo "$ogien to twoj swiety atrybut, ulubiony $kolor, i $ilosc tyle rzeczy dostaniesz pod choinke.:"
+
