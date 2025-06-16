@@ -1,0 +1,6 @@
+#!/bin/bash
+
+function is_small()
+{
+  if [[ 
+}
